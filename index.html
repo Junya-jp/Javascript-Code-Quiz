@@ -9,10 +9,10 @@
   </head>
   <body>
     <div>
-        <header>
-            <span><a href="#"> Show High Scores</a></span>
-            <span>Time Left:</span>
-        </header>
+        <div class="head">
+            <span id="high-score"><a href="#"> Show High Scores</a></span>
+            <span id="time">Time Left:</span>
+        </div>
         <div class = "card">
             <div class ="card-header">
                 <h2>Javascript Knowledge Quiz</h2>
@@ -21,7 +21,16 @@
                 <p>This is a short quiz to test your knowledge of Javascript. The questions are straight forward and your only task is to choose the right answer. Try your best to answer correctly and aim for a high score but be warned watch your time a wrong answer may have undesired consequences. Press start quiz to begin, GOOD LUCK!</p>
             </div>
             <div class ="card-footer">
-                <button id = "start" class ="btn"> Start Quiz </button>
+                <button id = "startquiz" class ="btn" onclick=""> Start Quiz </button>
+            </div>
+        </div>
+        <div class="quiz-container">
+            <div id ="question-text"></div>
+            <div class="question-options">
+                <button class ="button-option" id = "correct"></button>
+                <button class="button-option" id="incorrect"></button>
+                <button class="button-option" id="incorrect"></button>
+                <button class="button-option" id="incorrect"></button>
             </div>
         </div>
     </div>
